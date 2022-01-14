@@ -1,0 +1,25 @@
+/* Google Font Import */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+/* Reset All Margin & padding and add box sizing style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Global variable declare */
+:root {
+  --primary-clor: #e02c6d;
+  --text-color: #3a3a3a;
+  --heading-color-v1: #3a3a3a;
+  --heading-color-v2: #18191f;
+  --light-black: #787885;
+  --hover-color: #f0598e;
+}
+
+/* Reusable Styles*/
+.sec-gap {
+  margin-bottom: 100px;
+}
