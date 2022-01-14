@@ -23,3 +23,58 @@
 .sec-gap {
   margin-bottom: 100px;
 }
+
+/* Mobile Menu  */
+.mobile-menu {
+  display: none;
+}
+
+.width-v1 {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* Nav Area */
+.nav-area nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.logo h3 {
+}
+.logo a {
+  text-decoration: none;
+  font-size: 24px;
+  color: var(--text-color);
+}
+.logo a span {
+  color: var(--primary-clor);
+}
+
+.menu ul {
+  display: flex;
+}
+.menu ul li {
+  list-style: none;
+  padding: 0 28px;
+}
+.menu ul li:last-child {
+  padding-right: 0;
+}
+
+.menu ul li a {
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--text-color);
+  transition: 0.3s all ease;
+  -webkit-transition: 0.3s all ease;
+  -moz-transition: 0.3s all ease;
+  -ms-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+}
+.menu ul li a:hover {
+  color: var(--primary-clor);
+}
