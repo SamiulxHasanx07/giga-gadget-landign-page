@@ -13,15 +13,50 @@
 :root {
   --primary-clor: #e02c6d;
   --text-color: #3a3a3a;
+  --color-wh: #ffff;
   --heading-color-v1: #3a3a3a;
   --heading-color-v2: #18191f;
   --light-black: #787885;
-  --hover-color: #f0598e;
+  --hover-color: #ee447f;
 }
 
 /* Reusable Styles*/
 .sec-gap {
   margin-bottom: 100px;
+}
+p {
+  font-size: 16px;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.btn {
+  margin-top: 20px;
+  padding: 10px 24px;
+  background-color: var(--primary-clor);
+  color: var(--color-wh);
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 24px;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  -ms-border-radius: 24px;
+  -o-border-radius: 24px;
+  transition: 0.3s all ease;
+  -webkit-transition: 0.3s all ease;
+  -moz-transition: 0.3s all ease;
+  -ms-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+}
+.btn i {
+  margin-left: 10px;
+}
+
+.btn:hover {
+  background-color: var(--hover-color);
 }
 
 /* Mobile Menu  */
@@ -77,4 +112,22 @@
 }
 .menu ul li a:hover {
   color: var(--primary-clor);
+}
+
+/* Hero area */
+.hero-area {
+}
+.hero-area .area-left {
+  width: 60%;
+}
+.hero-area .area-left h2 {
+  font-size: 52px;
+  color: var(--heading-color-v1);
+}
+.hero-area .area-left p {
+  color: var(--text-color);
+}
+.hero-area .area-right {
+  background: url(images/circle-design.svg);
+  width: 40%;
 }
