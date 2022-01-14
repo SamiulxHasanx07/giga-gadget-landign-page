@@ -21,6 +21,10 @@
 }
 
 /* Reusable Styles*/
+.width-v1 {
+  max-width: 1300px;
+  margin: 0 auto;
+}
 .sec-gap {
   margin-bottom: 100px;
 }
@@ -62,11 +66,6 @@ p {
 /* Mobile Menu  */
 .mobile-menu {
   display: none;
-}
-
-.width-v1 {
-  max-width: 1300px;
-  margin: 0 auto;
 }
 
 /* Nav Area */
@@ -128,6 +127,9 @@ p {
   color: var(--text-color);
 }
 .hero-area .area-right {
-  background: url(images/circle-design.svg);
+  background: url(/images/circle-design.svg);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: center;
   width: 40%;
 }
