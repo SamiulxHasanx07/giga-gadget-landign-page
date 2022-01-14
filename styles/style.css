@@ -133,3 +133,13 @@ p {
   background-position: center;
   width: 40%;
 }
+
+/* Brand Area */
+.logos {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-top: 1px solid rgb(212, 212, 212);
+  border-bottom: 1px solid rgb(212, 212, 212);
+  padding: 35px 0px;
+}
