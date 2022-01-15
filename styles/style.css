@@ -216,3 +216,38 @@ p {
 .product-section .pr-btn a:hover {
   color: var(--hover-color);
 }
+
+/* service section */
+.sercise-sec-title {
+  text-align: center;
+  font-size: 35px;
+  color: var(--heading-color-v1);
+}
+.services {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.services .single-service {
+  display: flex;
+  align-items: center;
+  padding: 50px 15px;
+  margin-right: 20px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.services .single-service:last-child {
+  margin-right: 0;
+}
+.single-service .service-icon {
+  padding: 20px 20px;
+}
+.single-service .service-icon i {
+  color: var(--primary-clor);
+  font-size: 35px;
+}
+
+.service-info .service-title {
+  color: var(--heading-color-v1);
+  font-size: 24px;
+  font-weight: 500;
+}
