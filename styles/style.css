@@ -19,6 +19,11 @@
   --light-black: #787885;
   --hover-color: #ee447f;
   --star-color: #fb8200;
+  --footer-bg: #0a0826;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* Reusable Styles*/
@@ -123,6 +128,7 @@ p {
 
 /* Hero area */
 .hero-area {
+  padding-top: 80px;
 }
 .hero-area .area-left {
   width: 60%;
@@ -189,6 +195,7 @@ p {
 .product-info .product-price {
   font-size: 24px;
   font-weight: 400;
+  color: var(--text-color);
 }
 
 .product-info .product-rating i {
@@ -197,6 +204,7 @@ p {
 }
 .product-rating span {
   margin-left: 8px;
+  color: var(--text-color);
 }
 .product-info .prodcut-description {
   color: var(--light-black);
@@ -217,7 +225,7 @@ p {
   color: var(--hover-color);
 }
 
-/* service section */
+/* Feature/Service section  */
 .sercise-sec-title {
   text-align: center;
   font-size: 35px;
@@ -250,4 +258,61 @@ p {
   color: var(--heading-color-v1);
   font-size: 24px;
   font-weight: 500;
+}
+
+/* footer section */
+footer {
+  padding: 50px 0px;
+  background-color: var(--footer-bg);
+  color: var(--color-wh);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+footer h3 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.social-icon {
+  margin-top: 30px;
+  display: flex;
+}
+.social-icon .sc-icon:hover {
+  background-color: var(--primary-clor);
+}
+.social-icon .sc-icon {
+  color: var(--color-wh);
+  font-size: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.116);
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+}
+
+.social-icon a {
+  color: var(--color-wh);
+  margin-right: 30px;
+}
+
+.social-icon a:last-child {
+  color: var(--color-wh);
+  margin-right: 0px;
+}
+.social-icon i {
+  line-height: 50px;
+}
+
+/* Responsive Styles */
+
+/* Tablet Device */
+
+/* Mobile Device */
+@media screen and (max-width: 480px) {
+  
 }
