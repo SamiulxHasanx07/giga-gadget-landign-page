@@ -80,7 +80,12 @@ p {
 .mobile-menu {
   display: none;
 }
-
+.mobile-menu i {
+  color: var(--heading-color-v1);
+}
+.mobile-menu i:hover {
+  color: var(--primary-clor);
+}
 /* Nav Area */
 .nav-area nav {
   display: flex;
@@ -132,6 +137,7 @@ p {
 }
 .hero-area .area-left {
   width: 60%;
+  padding-right: 60px;
 }
 .area-right img {
   width: 100%;
@@ -150,6 +156,7 @@ p {
   background-position: center;
   width: 40%;
 }
+/* area right animation */
 
 /* Brand Area */
 .logos {
@@ -316,11 +323,109 @@ footer h3 span {
 /* Responsive Styles */
 
 /* Small Screen or laptop screen size */
-@media only screen and (min-widht: 769) and (max-width: 1024) {
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .width-v1,
+  .width-v2 {
+    max-width: 768px;
+    width: 90%;
+  }
+  .container {
+    display: block;
+  }
+  .d-none {
+    display: none;
+  }
+
+  /* navbar area */
+  .mobile-menu {
+    display: block;
+  }
+  .mobile-menu i {
+    font-size: 30px;
+  }
+
+  .menu li a i {
+    font-size: 30px;
+  }
+
+  .hero-area .area-left {
+    text-align: center;
+  }
+  .hero-area .area-left {
+    width: 100%;
+    padding-right: 0;
+  }
+  .hero-area .area-right {
+    margin-top: 40px;
+    width: 100%;
+  }
+
+  /* Product Area  */
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* Service Or Feature Area */
+  .services {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+    row-gap: 30px;
+  }
+  .services .single-service {
+    margin-right: 0px;
+  }
 }
 
 /* Tablet Device */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
+  .width-v1,
+  .width-v2 {
+    max-width: 768px;
+    width: 90%;
+  }
+  .container {
+    display: block;
+  }
+  .d-none {
+    display: none;
+  }
+
+  /* navbar area */
+  .mobile-menu {
+    display: block;
+  }
+  .mobile-menu i {
+    font-size: 30px;
+  }
+
+  .menu li a i {
+    font-size: 30px;
+  }
+
+  .hero-area .area-left {
+    text-align: center;
+  }
+  .hero-area .area-left {
+    width: 100%;
+    padding-right: 0;
+  }
+  .hero-area .area-right {
+    margin-top: 40px;
+    width: 100%;
+  }
+
+  /* Product Area  */
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* Service Or Feature Area */
+  .services {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+    row-gap: 30px;
+  }
+  .services .single-service {
+    margin-right: 0px;
+  }
 }
 
 /* Mobile Device */
@@ -335,6 +440,9 @@ footer h3 span {
   }
   p {
     font-size: 15px;
+  }
+  .d-none {
+    display: none;
   }
 
   /* navbar area */
@@ -361,6 +469,7 @@ footer h3 span {
   .hero-area .area-left {
     width: 100%;
     text-align: center;
+    padding-right: 0px;
   }
   .hero-area .area-left h2 {
     font-size: 35px;
