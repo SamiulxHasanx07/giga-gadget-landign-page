@@ -17,7 +17,7 @@
   --heading-color-v1: #3a3a3a;
   --heading-color-v2: #18191f;
   --light-black: #787885;
-  --hover-color: #ee447f;
+  --hover-color: #ff6da0;
   --star-color: #fb8200;
   --footer-bg: #0a0826;
 }
@@ -132,6 +132,9 @@ p {
 }
 .hero-area .area-left {
   width: 60%;
+}
+.area-right img {
+  width: 100%;
 }
 .hero-area .area-left h2 {
   font-size: 52px;
@@ -274,7 +277,9 @@ footer h3 {
   font-size: 30px;
   margin-bottom: 10px;
 }
-
+footer h3 span {
+  color: var(--primary-clor);
+}
 .social-icon {
   margin-top: 30px;
   display: flex;
@@ -310,9 +315,93 @@ footer h3 {
 
 /* Responsive Styles */
 
+/* Small Screen or laptop screen size */
+@media only screen and (min-widht: 769) and (max-width: 1024) {
+}
+
 /* Tablet Device */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+}
 
 /* Mobile Device */
-@media screen and (max-width: 480px) {
-  
+@media only screen and (max-width: 480px) {
+  .width-v1,
+  .width-v2 {
+    max-width: 481px;
+    width: 90%;
+  }
+  .container {
+    display: block;
+  }
+  p {
+    font-size: 15px;
+  }
+
+  /* navbar area */
+  .mobile-menu {
+    display: block;
+  }
+  .mobile-menu i {
+    font-size: 30px;
+  }
+  .menu ul li a {
+    font-size: 30px;
+  }
+  .d-none {
+    display: none;
+  }
+  .menu ul li {
+    padding: 0 10px;
+  }
+
+  /* Hero Area */
+  .hero-area {
+    padding-top: 30px;
+  }
+  .hero-area .area-left {
+    width: 100%;
+    text-align: center;
+  }
+  .hero-area .area-left h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+  .hero-area .area-right {
+    background-size: 95%;
+    width: 100%;
+    margin-top: 80px;
+  }
+
+  /* Popular Collection Section  */
+  .products {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .products .single-product {
+    padding: 20px 18px;
+  }
+
+  /* service area */
+  .services {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 30px;
+  }
+  .services .single-service {
+    margin-right: 0;
+  }
+
+  /* footer area */
+  footer h3 {
+    font-size: 25px;
+  }
+  .social-icon {
+    margin-top: 20px;
+  }
+  .social-icon .sc-icon {
+    font-size: 15px;
+    width: 35px;
+    height: 35px;
+  }
+  .social-icon i {
+    line-height: 35px;
+  }
 }
